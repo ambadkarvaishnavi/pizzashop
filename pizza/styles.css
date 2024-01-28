@@ -1,0 +1,124 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  h1 {
+    font-size: 3rem;
+    margin-bottom: 30px;
+  }
+  
+  .main-content {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 1200px;
+  }
+  
+  .form-container {
+    flex: 1;
+    margin-right: 20px;
+  }
+  
+  .orders-container {
+    flex: 2;
+  }
+  
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    margin-bottom: 5px;
+  }
+  
+  select,
+  button {
+    margin-bottom: 10px;
+    padding: 5px;
+  }
+  
+  button {
+    cursor: pointer;
+  }
+  
+  .orders {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+  }
+  
+  .order {
+    border: 1px solid #ccc;
+    padding: 10px;
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .order-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .order-id {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  .stage {
+    padding: 5px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .time-spent {
+    font-size: 0.8rem;
+    color: #666;
+  }
+  
+  .actions {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .cancel {
+    color: red;
+    cursor: pointer;
+  }
+  
+  @media (max-width: 768px) {
+    .main-content {
+      flex-direction: column;
+    }
+  
+    .form-container,
+    .orders-container {
+      margin: 0;
+      margin-bottom: 20px;
+    }
+  
+    .orders {
+      grid-template-columns: 1fr;
+    }
+  }

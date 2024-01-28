@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pizza Shop</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>PIZZA SHOP</h1>
+    <div class="main-content">
+      <div class="form-container">
+        <h2>Place a Pizza Order</h2>
+        <form id="pizza-form">
+          <label for="type">Type:</label>
+          <select id="type">
+            <option value="veg">Veg</option>
+            <option value="non-veg">Non-Veg</option>
+          </select>
+
+          <label for="size">Size:</label>
+          <select id="size">
+            <option value="small">Small</option>
+            <option value="medium">Medium</option>
+            <option value="large">Large</option>
+          </select>
+
+          <label for="base">Base:</label>
+          <select id="base">
+            <option value="thin">Thin</option>
+            <option value="thick">Thick</option>
+          </select>
+
+          <button type="submit">Place Order</button>
+        </form>
+      </div>
+
+      <div class="orders-container">
+        <h2>Pizzas in Progress</h2>
+        <div class="orders" id="orders">
+          <!-- Pizza cards will be inserted here -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="scripts.js"></script>
+</body>
+</html>
